@@ -7,30 +7,53 @@ body,
   font-size: 62.5%;
 }
 .TRUE-TITLE {
-  font-size: 5rem;
+  background-color: red;
+  font-size: 4rem;
   text-align: center;
-  background-color: rgb(238, 30, 30);
 }
 .parent {
   font-size: 3rem;
-
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.parent2 {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.parent3 {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
-.Title {
-  font-size: 3rem;
-}
-.box1 {
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9 {
+  font-size: 4rem;
   text-align: center;
-  border: black solid 1px;
-  margin-top: 5rem;
+  border: 3px solid black;
+  border-radius: 25px;
+  padding: 7rem;
+  box-sizing: border-box;
+  width: 20%;
 }
-.box2 {
-  text-align: center;
-  border: black solid 2px;
-  margin-top: 5rem;
+.mario {
+  padding-bottom: 3rem;
 }
 img {
-  size: 50%;
+  max-width: 120%;
+  margin-right: 100px;
 }
