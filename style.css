@@ -61,7 +61,7 @@ body {
 }
 .card:hover {
   background-color: red;
-  outline: 1.4rem solid black;
+  outline: 1.4rem solid rgb(255, 255, 255);
 }
 
 img {
