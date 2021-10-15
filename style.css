@@ -45,7 +45,7 @@ body {
   margin-left: 3rem;
   margin-right: 3rem;
 }
-.fighter {
+.Fighter-name {
   font-size: 2.5rem;
 }
 
@@ -75,16 +75,4 @@ body {
 
 img {
   max-width: 70%;
-}
-img:hover {
-  animation-name: spin;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
+  height: 20rem;
