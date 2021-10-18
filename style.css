@@ -19,8 +19,6 @@ body {
   font-family: "Abril Fatface", cursive;
   color: aliceblue;
   font-size: 4rem;
-  display: inline;
-  border: solid 3px aliceblue;
   margin-top: 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -32,6 +30,11 @@ body {
   from {
     margin-left: 100%;
     width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
@@ -97,6 +100,20 @@ body {
 .card:hover {
   background-color: red;
   outline: 1.2rem solid rgb(255, 255, 255);
+}
+.fighter-img:hover {
+  animation-name: spin2;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform: rotate(0deg);
+}
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 img {
