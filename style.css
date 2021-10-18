@@ -48,6 +48,32 @@ body {
 .Fighter-name {
   font-size: 2.5rem;
 }
+.type {
+  font-family: "Abril Fatface", cursive;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.type:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
 
 .card {
   font-family: "Abril Fatface", cursive;
@@ -74,5 +100,9 @@ body {
 }
 
 img {
-  max-width: 70%;
+  max-width: 150%;
   height: 20rem;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
