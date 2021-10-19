@@ -14,6 +14,9 @@ body {
   margin-top: 1rem;
   text-align: center;
 }
+.header:hover {
+  transform: skew(-30deg);
+}
 
 .title {
   font-family: "Abril Fatface", cursive;
@@ -50,17 +53,34 @@ body {
 }
 .Fighter-name {
   font-size: 2.5rem;
+  opacity: 1;
+}
+.Fighter-name:hover {
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .type {
   font-family: "Abril Fatface", cursive;
   background-color: white;
+  border-radius: 10px;
   display: block;
   margin: 0 auto;
   margin-top: 3rem;
   padding: 1rem;
-  animation-name: spin;
-  animation-duration: 1s;
-  animation-timing-function: linear;
+  opacity: 0.5;
 }
 
 @keyframes spin {
@@ -73,9 +93,19 @@ body {
 }
 
 .type:hover {
-  animation-name: spin;
-  animation-duration: 1s;
-  animation-timing-function: linear;
+  opacity: 1;
+  animation: fade 2s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .card {
@@ -87,9 +117,7 @@ body {
   height: 100px;
   text-align: center;
   margin: 2rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
-  padding-bottom: 31rem;
+  padding-bottom: 35rem;
   background-color: white;
 }
 
@@ -117,9 +145,57 @@ body {
 }
 
 img {
-  max-width: 150%;
+  margin-top: 2rem;
+  max-width: 100%;
   height: 20rem;
   animation-name: spin;
   animation-duration: 1s;
   animation-timing-function: linear;
+}
+
+@media screen and (max-width: 1366px) {
+  .title {
+    color: red;
+  }
+  .card{background-color: black;
+    border: 3px solid red;
+    box-shadow: 7px 7px red);}
+.Fighter-name{
+  color: aliceblue;}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .title {
+    color: black;
+  }
+  .card {
+    background-color: black;
+    border: 3px solid gold;
+    box-shadow: 7px 7px rgba(255, 230, 0, 0.876);
+  }
+  .Fighter-name {
+    color: white;
+  }
+  body {
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    color: gold;
+  }
+  .card {
+    background-color: dodgerblue;
+    border: 3px solid blue;
+    box-shadow: 7px 7px rgb(1, 7, 186);
+  }
+  .Fighter-name {
+    color: white;
+  }
+  body {
+    background-color: pink;
+  }
 }
